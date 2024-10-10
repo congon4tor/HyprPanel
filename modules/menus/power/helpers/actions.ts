@@ -1,6 +1,6 @@
 import { Action } from 'lib/types/power';
 import options from 'options';
-const { sleep, reboot, logout, shutdown } = options.menus.dashboard.powermenu;
+const { sleep, reboot, logout, shutdown, caffeine } = options.menus.dashboard.powermenu;
 
 class PowerMenu extends Service {
     static {
@@ -24,6 +24,7 @@ class PowerMenu extends Service {
     action(action: Action): void {
         [this.#cmd, this.#title] = {
             sleep: [sleep.value, 'Sleep'],
+            caffeine: [caffeine.value, 'Caffeine'],
             reboot: [reboot.value, 'Reboot'],
             logout: [logout.value, 'Log Out'],
             shutdown: [shutdown.value, 'Shutdown'],
