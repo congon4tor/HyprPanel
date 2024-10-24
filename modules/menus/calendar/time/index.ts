@@ -12,7 +12,11 @@ const period = Variable('', {
 });
 
 const militaryTime = Variable('', {
-    poll: [1000, 'date "+%H:%M:%S"'],
+    poll: [1000, 'date "+%H:%M:%S %Z"'],
+});
+
+const militaryTimeUTC = Variable('', {
+    poll: [1000, 'date -u "+%H:%M:%S %Z"'],
 });
 
 const TimeWidget = (): BoxWidget => {
