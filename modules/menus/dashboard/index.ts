@@ -7,6 +7,7 @@ import { Directories } from './directories/index.js';
 import Window from 'types/widgets/window.js';
 import { Attribute, Child } from 'lib/types/widget.js';
 import options from 'options.js';
+import { Profile } from './profile/index.js';
 
 const { controls, shortcuts, stats, directories } = options.menus.dashboard;
 
