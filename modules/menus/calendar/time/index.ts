@@ -60,12 +60,20 @@ const TimeWidget = (): BoxWidget => {
                     return [
                         Widget.Box({
                             hpack: 'center',
+                            vpack: 'center',
+                            vertical: true,
                             children: [
                                 Widget.Label({
                                     class_name: 'clock-content-time',
                                     label: hideSeconds
                                         ? militaryTime.bind().as((str) => str.slice(0, -3))
                                         : militaryTime.bind(),
+                                }),
+                                Widget.Label({
+                                    class_name: 'clock-content-time',
+                                    label: hideSeconds
+                                        ? militaryTimeUTC.bind().as((str) => str.slice(0, -3))
+                                        : militaryTimeUTC.bind(),
                                 }),
                             ],
                         }),
