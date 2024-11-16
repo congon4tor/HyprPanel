@@ -706,6 +706,7 @@ const options = mkOptions(OPTIONS, {
                             restart: opt(colors.peach),
                             logout: opt(colors.green),
                             sleep: opt(colors.sky),
+                            caffeine: opt(colors.yellow),
                             confirmation: {
                                 card: opt(colors.base),
                                 background: opt(colors.crust),
@@ -1150,6 +1151,7 @@ const options = mkOptions(OPTIONS, {
             powermenu: {
                 confirmation: opt(true),
                 sleep: opt('systemctl suspend'),
+                caffeine: opt('echo caffeine'),
                 reboot: opt('systemctl reboot'),
                 logout: opt('hyprctl dispatch exit'),
                 shutdown: opt('systemctl poweroff'),

@@ -51,6 +51,7 @@ export const DashboardMenuTheme = (): Scrollable<Child, Attribute> => {
                     type: 'color',
                 }),
                 Option({ opt: options.theme.bar.menus.menu.dashboard.powermenu.sleep, title: 'Sleep', type: 'color' }),
+                Option({ opt: options.theme.bar.menus.menu.dashboard.powermenu.caffeine, title: 'Caffeine', type: 'color' }),
                 Option({
                     opt: options.theme.bar.menus.menu.dashboard.powermenu.confirmation.card,
                     title: 'Confirmation Dialog Card',

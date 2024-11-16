@@ -1,5 +1,5 @@
 import DropdownMenu from '../shared/dropdown/index.js';
-import { Profile } from './profile/index.js';
+import { Power } from './power/index.js';
 import { Shortcuts } from './shortcuts/index.js';
 import { Controls } from './controls/index.js';
 import { Stats } from './stats/index.js';
@@ -7,6 +7,7 @@ import { Directories } from './directories/index.js';
 import Window from 'types/widgets/window.js';
 import { Attribute, Child } from 'lib/types/widget.js';
 import options from 'options.js';
+import { Profile } from './profile/index.js';
 
 const { controls, shortcuts, stats, directories } = options.menus.dashboard;
 

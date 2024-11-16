@@ -20,7 +20,7 @@ export type BarLayout = {
 };
 
 export type Unit = 'imperial' | 'metric';
-export type PowerOptions = 'sleep' | 'reboot' | 'logout' | 'shutdown';
+export type PowerOptions = 'sleep' | 'reboot' | 'logout' | 'shutdown' | 'caffeine';
 export type NotificationAnchor =
     | 'top'
     | 'top right'
